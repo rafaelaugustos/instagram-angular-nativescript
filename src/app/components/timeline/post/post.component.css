@@ -1,0 +1,54 @@
+.post {
+	margin-top: 20;
+}
+
+.post-header {
+	padding: 0 15 0 15;
+}
+
+.footer-header {
+	padding: 15;
+}
+
+.avatar {
+	width: 40;
+	height: 40;
+	border-radius: 100;
+	overflow: hidden;
+	background-color: silver;
+	margin-right: 10;
+}
+
+.avatar-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.post-name {
+	font-weight: 600;
+	color: #000;
+	font-size: 14;
+	margin-bottom: 0;
+}
+
+.post-hour {
+	color: #777;
+	font-size: 11;
+	margin-top: -3;
+}
+
+.post-picture {
+	margin-top: 20;
+}
+
+.username {
+	color: #f5375c;
+	font-weight: 600;
+	font-size: 14;
+}
+
+.text {
+	color: #000;
+	font-size: 13;
+}

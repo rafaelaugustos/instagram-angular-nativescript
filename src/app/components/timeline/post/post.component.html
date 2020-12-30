@@ -1,0 +1,36 @@
+<GridLayout colums="auto" rows="40, *, auto" class="post">
+	<FlexboxLayout
+		row="0"
+		col="0"
+		alignContent="center"
+		justifyContent="space-between"
+		class="post-header"
+	>
+		<FlexboxLayout>
+			<Image
+				[src]="item.avatar"
+				loadMode="async"
+				stretch="aspectFill"
+				class="avatar"
+			></Image>
+
+			<FlexboxLayout flexDirection="column" justifyContent="center">
+				<Label class="post-name" [text]="item.name"></Label>
+				<Label class="post-hour" [text]="item.hours"></Label>
+			</FlexboxLayout>
+		</FlexboxLayout>
+	</FlexboxLayout>
+
+	<StackLayout row="1" col="0">
+		<Image [src]="item.picture" loadMoad="async" class="post-picture"></Image>
+	</StackLayout>
+
+	<FlexboxLayout row="2" col="0" class="footer-header">
+		<Label textWrap="true" style="width: 100%">
+			<FormattedString>
+				<Span [text]="item.username" class="username"></Span>
+				<Span [text]="item.text" class="text"></Span>
+			</FormattedString>
+		</Label>
+	</FlexboxLayout>
+</GridLayout>
